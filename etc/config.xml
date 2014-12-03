@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Georgi_Cart>
+            <version>0.1.0</version>
+        </Georgi_Cart>
+    </modules>
+    
+   <frontend>
+        
+            <routers>
+                <checkout>
+                    <args>
+                        <modules>
+                            <Georgi_Cart before="Mage_Checkout">Georgi_Cart</Georgi_Cart><!--Change Anjan To Your Module NameSpace and Override to Your Module name-->
+                        </modules>
+                    </args>
+                </checkout>
+            </routers>        
+    </frontend> 
+    
+          
+</config>
